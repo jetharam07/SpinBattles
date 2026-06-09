@@ -27,15 +27,12 @@ Complete and verify the reward claim flow. Most of the wiring is already in plac
 
 **Work through this checklist:**
 
-- [ ] Connect a browser wallet and confirm the connection is reflected in the UI
-- [ ] Display the full connected wallet address (currently it is truncated)
-- [ ] Verify pending reward data is fetched from the backend and displayed correctly
-- [ ] Verify the token balance is read from the contract adapter and displayed correctly
-- [ ] Complete the reward claim flow: the claim button should submit a transaction, wait for the result, update the backend, and refresh the UI
-- [ ] Ensure transaction states are handled correctly at all times: `pending`, `confirmed`, `failed`
-- [ ] Confirm the backend reward status updates correctly after a claim
-- [ ] Find and fix the one intentional bug in the claim flow — explain what it was and how you fixed it
-- [ ] Review the UI for functional clarity — all sections should be visible and accurately reflect state
+- [ ] **Wallet** — connect a browser wallet, display the full connected address (currently truncated), and confirm the connection is reflected in the UI
+- [ ] **Data** — verify pending reward data from the backend and token balance from the contract adapter are fetched and displayed correctly
+- [ ] **Claim flow** — complete the reward claim end-to-end: submit a transaction, wait for the result, update the backend, refresh the UI, and confirm backend reward status updates after a claim
+- [ ] **Transaction states** — ensure `pending`, `confirmed`, and `failed` are handled correctly at all times
+- [ ] **Bug fix** — find and fix the one intentional bug in the claim flow, and explain what it was and how you fixed it
+- [ ] **UI** — review functional clarity; all sections should be visible and accurately reflect state
 
 ---
 
