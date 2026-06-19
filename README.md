@@ -124,10 +124,9 @@ Your submission will be reviewed across these areas:
 
 
 
+## Assessment Notes
 
-## Assessment Note
-
-* Updated the wallet section to display the full connected address.
-* Fixed an issue in the reward claim flow where the reward was being marked as claimed before the transaction confirmation was completed. The flow now waits for confirmation first and then updates the reward status.
+* Updated the wallet section in `src/components/WalletConnect.tsx` to display the full connected wallet address instead of a truncated address.
+* Fixed an issue in the reward claim flow in `src/lib/hooks/useRewards.ts`. The reward status was being updated before transaction confirmation was completed. The flow now waits for confirmation first and then updates the reward status and refreshes the UI.
 * Tested the claim flow and verified pending, confirmed, and failed transaction states.
-* Checked the UI to make sure wallet, reward, balance, and transaction status information are displayed correctly.
+* Reviewed the UI and confirmed that wallet, reward, balance, and transaction status information are displayed correctly.
