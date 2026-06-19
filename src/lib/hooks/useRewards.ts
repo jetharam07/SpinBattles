@@ -63,23 +63,7 @@ export function useRewards(address: string | undefined) {
         const txHash = await submitClaimTransaction(address, reward.id)
         setState((s) => ({ ...s, txHash }))
 
-        // await postClaimReward({ address, rewardId: reward.id, txHash })
-        // setState((s) => ({ ...s, txStatus: 'confirmed' }))
-
-        // const confirmationResult = await waitForConfirmation(txHash)
-        // if (confirmationResult === 'failed') {
-        //   setState((s) => ({
-        //     ...s,
-        //     txStatus: 'failed',
-        //     errorMessage: 'Transaction failed on-chain.',
-        //   }))
-        //   return
-        // }
-
-        // await refresh()
-
-
-
+// Rearrange flow ***
 
         const confirmationResult = await waitForConfirmation(txHash)
         if (confirmationResult === 'failed') {
@@ -95,7 +79,7 @@ export function useRewards(address: string | undefined) {
         setState((s) => ({ ...s, txStatus: 'confirmed' }))
 
         await refresh()
-
+// Rearrange flow ***
 
 
       } catch (err) {
