@@ -118,3 +118,16 @@ Your submission will be reviewed across these areas:
 | Functional UI clarity                                | ~5–10%  |
 
 
+
+
+
+
+
+
+
+## Assessment Note
+
+* Updated the wallet section to display the full connected address.
+* Fixed an issue in the reward claim flow where the reward was being marked as claimed before the transaction confirmation was completed. The flow now waits for confirmation first and then updates the reward status.
+* Tested the claim flow and verified pending, confirmed, and failed transaction states.
+* Checked the UI to make sure wallet, reward, balance, and transaction status information are displayed correctly.

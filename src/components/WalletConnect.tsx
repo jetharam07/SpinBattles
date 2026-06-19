@@ -13,7 +13,7 @@ export function WalletConnect() {
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Wallet</p>
           {isConnected && address ? (
             <p className="text-sm font-mono text-gray-200">
-              {address.slice(0, 6)}...{address.slice(-4)}
+              {address}
             </p>
           ) : (
             <p className="text-sm text-gray-500">Not connected</p>
